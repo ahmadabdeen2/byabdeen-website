@@ -7,7 +7,17 @@ type Base = {
 
 }
 
-export interface Project extends Base {
+
+interface Post extends Base {
+    author: Author;
+    body: Block[];
+    categories: Category[];
+    mainImage: Image;
+    slug: Slug;
+    title: string;
+    
+}
+ interface Project extends Base {
     author: Author;
     body: string;
     link: string;
@@ -42,3 +52,5 @@ interface Author extends Base {
     name: string;
     image: Image;
 }
+
+export type { Post, Project, Image, Reference, Slug, Category, Author }
