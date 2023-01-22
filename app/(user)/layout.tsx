@@ -1,8 +1,9 @@
+'use client'
 import "../../styles/globals.css";
 import localfont from "@next/font/local";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
-
+import {motion , AnimatePresence} from 'framer-motion'
 const RandomFont = localfont({
   src: [
     {
@@ -38,9 +39,11 @@ export default function RootLayout({
   return (
     <html className={`${RandomFont.variable} bg-background`}>
       <body className="overflow-x-hidden">
+        <AnimatePresence>
         <Header />
         {children}
         <Footer />
+        </AnimatePresence>
       </body>
     </html>
   );

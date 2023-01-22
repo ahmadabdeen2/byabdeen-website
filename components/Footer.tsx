@@ -47,7 +47,7 @@ const Footer = () => {
             />
             </div>
             <div className="flex items-center justify-start w-full">
-                <a href="mailto:hello@byabdeen.com" className='text-[7vw] xs:text-[6vw] text-secondary underline decoration-1 underline-offset-[5px] xs:underline-offset-[12px]'>hello@byabdeen.com</a>
+                <a href="mailto:hello@byabdeen.com" className='text-[7vw] xs:text-[6vw] text-secondary underline decoration-1 underline-offset-[5px] xs:underline-offset-[12px]'>hello@byabdeen.me</a>
                 </div>
                 <div className="flex items-center justify-between w-full">
             <div className="grid grid-cols-2 gap-4 place-content-start justify-start items-start">
