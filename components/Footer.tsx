@@ -12,7 +12,7 @@ const MyLinks = [
     {
         id: 'behance2',
         title: 'Behance',
-        link: 'https://www.behance.net/byabdeen',
+        link: 'https://www.behance.net/ahmadabdeen1',
     },
     {
         id: 'github3',
