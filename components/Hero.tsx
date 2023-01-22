@@ -44,14 +44,14 @@ const Hero = () => {
         </div>
         <div className="w-full h-[1px] bg-secondary p-[-0.5rem] mt-32 md:mt-16" />
         <ul className="flex flex-row items-center justify-between text-center px-5 xs:px-10 w-[100%] mt-6">
-          <li className="py-2 font-random font-medium  text-secondary hover:text-primary transition ease-in-out duration-300 text-md lg:text-xl hidden md:flex">
+          <li className="py-2 font-random font-medium  text-secondary  transition ease-in-out duration-300 text-md lg:text-xl hidden md:flex">
             Ahmad Abdeen
           </li>
-          <li className="py-2 font-random font-medium  text-secondary hover:text-primary transition ease-in-out duration-300 text-md lg:text-xl">
+          <li className="py-2 font-random font-medium  text-secondary transition ease-in-out duration-300 text-md lg:text-xl">
             ByAbdeen
           </li>
-          <li className="py-2 font-random font-medium  text-secondary hover:text-primary transition ease-in-out duration-300 text-md lg:text-xl">
-            hello@byabdeen.com
+          <li className="py-2 font-random font-medium  text-secondary  transition ease-in-out duration-300 text-md lg:text-xl">
+          <a href="mailto:hello@byabdeen.me">  hello@byabdeen.me</a>
           </li>
         </ul>
         <div className="relative w-full h-[1px] bg-secondary p-[-0.5rem] mt-6 lg:pt-0" />
