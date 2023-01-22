@@ -15,6 +15,7 @@ type Props = {
 
 
 const ProjectComponent = ({ project, flipped, index }: Props) => {
+
   return (
     <Link href={project?.link} className="flex flex-col items-start justify-center w-full h-full">
       <motion.p
@@ -31,8 +32,8 @@ const ProjectComponent = ({ project, flipped, index }: Props) => {
         {index + 1}.{" "}
       </motion.p>
       <div
-        className={`flex flex-col xs:flex-row mt-20 justify-between w-full items-center ${
-          flipped == "true" ? "flex-row-reverse" : "flex-row"
+        className={`flex flex-col mt-20 justify-between w-full items-center ${
+          flipped == "true" ? "xs:flex-row-reverse" : "xs:flex-row"
         } h-full`}
       >
         <motion.div className={`xs:w-[38vw] w-[100%]`}
@@ -77,14 +78,14 @@ const ProjectComponent = ({ project, flipped, index }: Props) => {
             className="flex items-center justify-start mt-10"
           >
             <CustomButton
-              backgroundColor="bg-primary"
-              arrowColor="light"
+              backgroundColor={`${project?.link == "https://byabdeen.com" ? 'bg-secondary' : 'bg-primary'}`}
+              arrowColor={`${project?.link == "https://byabdeen.com" ? 'dark' : 'light'}`}
               size="w-[10vw] h-[10vw] xs:w-[5vw] xs:h-[5vw]"
               rotate="rotate-0"
               arrowSize="w-[3vw] xs:w-[1.5vw]"
             />
             <p className="text-secondary text-[3vw] xs:text-[1.5vw] font-light pl-4">
-              View Project
+              {project?.link == "https://byabdeen.com" ? 'Ongoing Project' : 'View Project'}
             </p>
           </Link>
         </div>
