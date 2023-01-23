@@ -16,6 +16,8 @@ const query = groq`
 } | order(_createdAt desc)
 `
 
+export const revalidate = 360
+
 const Blog = async () => {
   const posts: Post[] = await client.fetch(query)
   
