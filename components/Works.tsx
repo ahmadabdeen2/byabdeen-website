@@ -27,7 +27,7 @@ const Works = ({projects}: Props) => {
       viewport ={{once:true}}
       className="text-[7vw]  text-secondary font-random font-semibold "> Portfolio</motion.h2>
       {projects.slice(0,3).map((project, index) => (
-        <ProjectComponent project={project} flipped = {`${index % 2 !== 0 ? 'true': 'false'}`} index={index} key={project._id} />
+        <ProjectComponent project={project} flipped = {`${index % 2 !== 0 ? 'true': 'false'}`} index={index} key={project.title + " " + project._id} />
       ))}
        <Link href='/portfolio' className="flex w-full items-center justify-end mt-32 relative before:block before:w-[90%] before:bg-secondary before:h-[1px] ">
       <CustomButton

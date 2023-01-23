@@ -22,7 +22,7 @@ export const RichText = {
             <ul className="ml-10 py-5 list-disc space-y-5">{children}</ul>
         ),
         number: ({ children }: any) => (
-            <ol className="mt-lg list-decimal">{children}</ol>
+            <ol className="text-secondary ml-10 text-left w-full list-decimal">{children}</ol>
         ),
     },
     block: {
@@ -36,10 +36,11 @@ export const RichText = {
             <h3 className="text-3xl py-10 text-secondary font-bold">{children}</h3>
         ),
         h4: ({children}: any) => (
-            <h4 className="text-2xl py-10 text-secondary font-bold">{children}</h4>
+            <h4 className="text-2xl py-5 text-left w-full text-secondary font-bold">{children}</h4>
         ),
+        
         normal: ({children}: any) => (
-            <p className="text-secondary text-lg font-regular py-2">{children}</p>
+            <p className="text-secondary text-lg text-left w-full font-regular py-2">{children}</p>
         ),
 
 
@@ -59,7 +60,7 @@ export const RichText = {
                 <Link 
                 href={value.href}
                 rel={rel}
-                className="underline decoration-[#F7AB0A] hover:decoration-black"
+                className="underline decoration-primary hover:decoration-black"
                 >
                 {children}
                 </Link>
