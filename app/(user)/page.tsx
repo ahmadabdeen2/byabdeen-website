@@ -16,6 +16,7 @@ const query = groq`
 
 
 
+export const revalidate = 30
 
 export default async function HomePage(){
   const projects = await client.fetch(query)
