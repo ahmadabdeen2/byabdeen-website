@@ -7,4 +7,7 @@ module.exports = {
   images: {
     domains: ['cdn.sanity.io'],
   },
+  compiler:{
+    removeConsole: process.env.NODE_ENV === 'production'
+  }
 }

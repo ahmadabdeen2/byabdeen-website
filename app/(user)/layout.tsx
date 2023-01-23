@@ -37,13 +37,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html className={`${RandomFont.variable} bg-background`}>
+    <html className={`${RandomFont.variable} bg-background`} lang="en">
       <body className="overflow-x-hidden">
-        <AnimatePresence>
+        {/* <AnimatePresence> */}
         <Header />
         {children}
         <Footer />
-        </AnimatePresence>
+        {/* </AnimatePrese/nce> */}
       </body>
     </html>
   );

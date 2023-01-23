@@ -57,6 +57,7 @@ const ProjectComponent = ({ project, flipped, index }: Props) => {
               whileInView = {{opacity: 1, x: 0}}
               transition = {{duration: 1}}
               viewport ={{once:true}}
+              key= {index}
               className="text-secondary text-[2vw] xs:text-[1.2vw] font-light pr-1">
                 {category?.title}
                 {index !== project?.categories.length - 1 ? " |  " : ""}
