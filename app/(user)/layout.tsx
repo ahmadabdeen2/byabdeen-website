@@ -4,6 +4,7 @@ import localfont from "@next/font/local";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import {motion , AnimatePresence} from 'framer-motion'
+import { AnalyticsWrapper } from '../../components/Analytics';
 const RandomFont = localfont({
   src: [
     {
@@ -40,6 +41,7 @@ export default function RootLayout({
     <html className={`${RandomFont.variable} bg-background`} lang="en">
       <body className="overflow-x-hidden">
         {/* <AnimatePresence> */}
+        <AnalyticsWrapper />
         <Header />
         {children}
         <Footer />
