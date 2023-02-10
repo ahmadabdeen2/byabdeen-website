@@ -1,3 +1,5 @@
+
+
 import Hero from '../../components/Hero'
 import About from '../../components/About'
 import Works from '../../components/Works'
@@ -7,6 +9,7 @@ import { client } from "../../lib/sanity.client";
 import PreviewBlogList from '../../components/PreviewBlogList';
 import PreviewSuspense from '../../components/PreviewSuspense';
 import {previewData} from 'next/headers'
+// import { NextSeo } from 'next-seo';
 
 const query = groq`
   *[_type=='project'] {
@@ -43,6 +46,7 @@ export default async function HomePage(){
   
   return (
     <div className='overflow-x-hidden'>
+
     <Hero/>
     <About/>
     <Works projects={projects.slice(0,3)}/>

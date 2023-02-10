@@ -42,6 +42,7 @@ export default function RootLayout({
       <body className="overflow-x-hidden">
         {/* <AnimatePresence> */}
         <AnalyticsWrapper />
+        
         <Header />
         {children}
         <Footer />
