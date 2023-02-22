@@ -26,6 +26,11 @@ const Header = () => {
       name: "Portfolio",
       link: "/portfolio",
     },
+    {
+      id:'CV',
+      name: 'Resume',
+      link: 'https://s3.me-south-1.amazonaws.com/byabdeen.com/Ahmad_Abdeen_CV_FEB_2023.pdf'
+    }
   ];
   const router = useRouter()
   const handleClick = (e: any , link: any) => {
@@ -73,7 +78,11 @@ const Header = () => {
             >
 
               <Link href={link.link
-              }>{link.name}</Link>
+              }
+              
+              target={link.name === 'Resume' ? "_blank" : ""}
+
+              >{link.name}</Link>
 
             </li>
           ))}
