@@ -22,7 +22,6 @@ const About = () => {
         <motion.p 
          initial={{ opacity: 0, y: -10 }}
          whileInView={{ opacity: 1, y: 0 }}
-         transition={{ duration: 1 }}
          viewport ={{once:true}}
         className='text-[3vw] md:text-[2vw] leading-[5vw] md:leading-[3.5vw] font-random text-secondary  mt-2'> I am a Creative Developer Designer Engineer. I like to tackle all of the steps in a project, beginning with the initial UX research all the way to developing the platform backend.  I usually spend all of my days on my computer, exposing my self to the latest trends and products because I am a firm believer that in this industry, if you miss one week, you would miss a year worth of content and updates. </motion.p> 
 <div className="flex items-center justify-center  mt-6 md:mt-16">
