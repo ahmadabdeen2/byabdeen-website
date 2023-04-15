@@ -51,7 +51,7 @@ const Hero = () => {
             ByAbdeen
           </li>
           <li className="py-2 font-random font-medium  text-secondary  transition ease-in-out duration-300 text-md lg:text-xl">
-          <a href="mailto:hello@byabdeen.me">  hello@byabdeen.me</a>
+          <a href="mailto:ahmadabdin3@gmail.com">ahmadabdin3@gmail.com</a>
           </li>
         </ul>
         <div className="relative w-full h-[1px] bg-secondary p-[-0.5rem] mt-6 lg:pt-0" />
