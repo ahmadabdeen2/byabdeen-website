@@ -37,7 +37,7 @@ const Footer = () => {
     <div className="bg-background px-4 md:px-16 font-random w-full h-[50vh] xs:h-screen">
       <div className="flex flex-col justify-between items-center  border-x-[1px] border-secondary px-5 xs:px-10 py-4 xs:py-10 h-full">
         <div className="flex items-center justify-between w-full mt-10">
-            <h2 className="text-[10vw]  text-secondary font-random font-semibold "> Let's Talk. </h2>
+            <h2 className="text-[10vw]  text-secondary font-random "> Let's Talk. </h2>
             <CustomButton
               backgroundColor="bg-secondary"
               arrowColor="dark"
@@ -47,7 +47,7 @@ const Footer = () => {
             />
             </div>
             <div className="flex items-center justify-start w-full">
-                <a href="mailto:ahmadabdin3@gmail.com" className='text-[7vw] xs:text-[6vw] text-secondary underline decoration-1 underline-offset-[5px] xs:underline-offset-[12px]'>ahmadabdin3@gmail.com</a>
+                <a href="mailto:ahmadabdin3@gmail.com" className='text-[6vw] xs:text-[5vw] font-extralight text-secondary underline decoration-1 underline-offset-[5px] xs:underline-offset-[12px]'>ahmadabdin3@gmail.com</a>
                 </div>
                 <div className="flex items-center justify-between w-full">
             <div className="grid grid-cols-2 gap-4 place-content-start justify-start items-start">
@@ -56,7 +56,7 @@ const Footer = () => {
                 ))}
                 </div>
                 <div className="flex h-full max-w-[40%] items-end">
-                <p className="text-[2vw] text-secondary font-bool">© 2023 ByAbdeen. All Rights Reserved</p>
+                <p className="text-[1.5vw] text-secondary font-random font-light">© 2023 ByAbdeen. All Rights Reserved.</p>
                 </div>
                 </div>
       </div>
