@@ -15,15 +15,13 @@ const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
 
 const variants: Variants = {
   open: {
-    //   display: "block",
+
     opacity: 1,
     height: "auto",
     marginTop: isMobile ? 25: 50,
     transition: {
       duration: 1.5,
-    //   ease: [0, 0.71, 0.2, 1.01],
-    //   staggerChildren: 0.17,
-    //   delayChildren: 0.2,
+
     },
   },
   closed: {
@@ -76,7 +74,7 @@ const ServiceListItem = ({ title, index, description }: Props) => {
               className="flex items-center  justify-between  w-full"
               onClick={() => setToggle(!toggle)}
             >
-              <p className="text-white text-[2vw] leading-[4vw] font-book">
+              <p className="text-white text-[3.5vw] leading-[5vw] xs:text-[2vw] xs:leading-[4vw] font-book ">
                 {" "}
                 {description}{" "}
               </p>
