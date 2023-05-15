@@ -29,7 +29,7 @@ const Header = () => {
     {
       id:'CV',
       name: 'Resume',
-      link: 'https://s3.me-south-1.amazonaws.com/byabdeen.com/Ahmad+Abdeen_CV_04_2023.pdf'
+      link: 'https://s3.me-south-1.amazonaws.com/byabdeen.com/Ahmad_Abdeen_CV_05_23.pdf'
     }
   ];
   const router = useRouter()

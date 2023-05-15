@@ -38,7 +38,6 @@ export const RichText = {
         h4: ({children}: any) => (
             <h4 className="text-2xl py-5 text-left w-full text-secondary font-bold">{children}</h4>
         ),
-        
         normal: ({children}: any) => (
             <p className="text-secondary text-lg text-left w-full font-regular py-2">{children}</p>
         ),
