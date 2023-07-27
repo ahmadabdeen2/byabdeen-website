@@ -41,7 +41,7 @@ async function Post({ params: { slug } }: Props) {
     `;
 
   const post = await client.fetch(query, { slug });
-  console.log(post)
+  console.log(post);
 
   return (
     <article className="bg-background px-4 md:px-16 font-random w-full">
@@ -63,7 +63,7 @@ async function Post({ params: { slug } }: Props) {
               <p className="text-[3vw] xs:text-[1.6vw] md:text-[1.2vw] text-secondary font-semibold ">
                 {post?.author?.name} |{" "}
                 <Link href={post.link} target="blank">
-                  {post.link}
+                  {post.link} {""}
                 </Link>
               </p>
               <p className="text-[3vw] xs:text-[1.6vw] md:text-[1.2vw] text-secondary font-semibold">
@@ -92,7 +92,6 @@ async function Post({ params: { slug } }: Props) {
           </div>
         </div>
         <PortableText value={post?.body} components={RichText} />
-        
       </div>
     </article>
   );
