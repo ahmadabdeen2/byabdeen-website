@@ -56,7 +56,7 @@ async function Post({ params: { slug } }: Props) {
             />
           </div>
           <div className="flex flex-col items-start justify-between mt-5 min-h-[40%]">
-            <h1 className="text-[7vw] text-secondary font-bold">
+            <h1 className="text-[4vw] text-secondary font-bold">
               {post?.title}
             </h1>
             <div className="flex items-center justify-between w-full">
@@ -82,9 +82,10 @@ async function Post({ params: { slug } }: Props) {
                 <p
                   key={category?._id}
                   className="bg-secondary text-primary px-3
-                            py-1 rounded-full text-[3vw] xs:text-[1.6vw] md:text-[1.2vw] font-semibold mt-4
+                             rounded-full text-[3vw] leading-[2vw] xs:text-[1.6vw] md:text-[1.2vw]  font-semibold mt-4
                             "
                 >
+                    
                   {category?.title}
                 </p>
               ))}
