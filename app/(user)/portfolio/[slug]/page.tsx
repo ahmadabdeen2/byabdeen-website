@@ -41,6 +41,7 @@ async function Post({ params: { slug } }: Props) {
     `;
 
   const post = await client.fetch(query, { slug });
+  console.log(post)
 
   return (
     <article className="bg-background px-4 md:px-16 font-random w-full">
@@ -48,7 +49,7 @@ async function Post({ params: { slug } }: Props) {
         <div className="flex flex-col  w-full  my-10">
           <div className="relative w-full ">
             <Image
-              src={urlFor(post?.mainImage).url()}
+              src={urlFor(post?.subImage).url()}
               alt={post.author.name}
               width={1000}
               height={1000}
@@ -91,6 +92,7 @@ async function Post({ params: { slug } }: Props) {
           </div>
         </div>
         <PortableText value={post?.body} components={RichText} />
+        
       </div>
     </article>
   );
