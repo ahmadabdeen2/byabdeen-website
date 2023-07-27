@@ -17,7 +17,7 @@ type Props = {
 const ProjectComponent = ({ project, flipped, index }: Props) => {
 
   return (
-    <Link href={project?.link} className="flex flex-col items-start justify-center w-full h-full">
+    <Link href={`/portfolio/${project?.slug.current}`} className="flex flex-col items-start justify-center w-full h-full">
       <motion.p
                   initial = {{opacity: 0, y: 50}}
                   whileInView = {{opacity: 1, y: 0}}
