@@ -13,12 +13,16 @@ const query = groq`
   author->,
   categories[]->,
 } | order(_createdAt desc)
+
+
+
 `
 
 
 
 const Portfolio = async () => {
   const projects: Project[] = await client.fetch(query)
+  
   return (
     <div className="bg-background px-4 md:px-16 font-random w-full overflow-x-hidden">
     <div className="border-x-[1px] border-secondary px-5 xs:px-10 py-4">
