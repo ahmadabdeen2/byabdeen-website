@@ -20,7 +20,7 @@ const BlogComponent = ({ post, index }: Props) => {
       viewport={{ once: true }}
       className="flex flex-col items-start"
     >
-      <Link href={`/blog/${post.slug.current}`}>
+      <Link href={`/tools/${post.slug.current}`}>
         <div className="flex justify-center items-center mt-4 w-full">
           {post.mainImage && (
             <Image
