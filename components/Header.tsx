@@ -27,9 +27,9 @@ const Header = () => {
       link: "/portfolio",
     },
     {
-      id:'CV',
-      name: 'Resume',
-      link: 'https://s3.me-south-1.amazonaws.com/byabdeen.com/Ahmad_Abdeen_CV_08_23.pdf'
+      id:'AITOOLS',
+      name: 'AI Tools',
+      link: '/tools'
     }
   ];
   const router = useRouter()
