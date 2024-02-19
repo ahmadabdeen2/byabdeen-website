@@ -46,15 +46,17 @@ async function Post({ params: { slug } }: Props) {
       <div className="flex flex-col items-center justify-between border-x-[1px] border-secondary px-5 xs:px-10 py-4">
         <div className="flex flex-col  w-full  my-10">
           <div className="relative w-full ">
-            <Image
-              src={urlFor(post?.mainImage).url()}
-              alt={post.author.name}
-              width={1000}
-              height={1000}
-            />
+            {post?.mainImage && (
+              <Image
+                src={urlFor(post?.mainImage).url()}
+                alt={post.author.name}
+                width={1000}
+                height={1000}
+              />
+            )}
           </div>
           <div className="flex flex-col items-start justify-between mt-5 min-h-[40%]">
-          <h1 className="text-[4vw] text-secondary font-bold">
+            <h1 className="text-[4vw] text-secondary font-bold">
               {post?.title}
             </h1>
             <div className="flex items-center justify-between w-full">
