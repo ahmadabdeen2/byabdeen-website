@@ -16,10 +16,7 @@ const query = groq`
 
 export const revalidate = 360;
 
-export const metadata = {
-  title: 'Blog',
-  description: "A collection of blog posts that I've written.",
-}
+
 
 const Blog = async () => {
   const posts: Post[] = await client.fetch(query);
