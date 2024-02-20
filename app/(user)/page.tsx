@@ -20,10 +20,6 @@ const query = groq`
 `;
 
 
-export const metadata = {
-  title: 'ByAbdeen',
-  description: "ByAbdeen is Ahmad Abdeen's personal website. It showcases his work, services, tools and blog posts.",
-}
 
 
 export const revalidate = 60
