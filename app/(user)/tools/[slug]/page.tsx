@@ -79,7 +79,7 @@ async function Post({ params: { slug } }: Props) {
                 <p
                   key={category?._id}
                   className="bg-secondary text-primary px-3
-                             rounded-full text-[3vw] leading-[2vw] xs:text-[1.6vw] md:text-[1.2vw]  font-semibold mt-4
+                             rounded-full text-[3vw] leading-[3vw] xs:text-[1.6vw] md:text-[1.2vw]  font-semibold mt-4
                             "
                 >
                   {category?.title}
