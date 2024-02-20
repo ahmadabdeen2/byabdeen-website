@@ -35,7 +35,7 @@ async function Post({ params: { slug } }: Props) {
     {
         ...,
         author->,
-        categories[]->
+        toolCategories[]->
     }
     `;
 
@@ -75,7 +75,7 @@ async function Post({ params: { slug } }: Props) {
               className="flex items-center justify-end mt-5
                     space-x-2"
             >
-              {post?.categories.map((category: any) => (
+              {post?.toolCategories.map((category: any) => (
                 <p
                   key={category?._id}
                   className="bg-secondary text-primary px-3

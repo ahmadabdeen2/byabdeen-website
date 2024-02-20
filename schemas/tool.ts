@@ -34,10 +34,10 @@ export default defineType({
       },
     }),
     defineField({
-      name: 'categories',
-      title: 'Categories',
+      name: 'toolCategories',
+      title: 'Tool Categories',
       type: 'array',
-      of: [{type: 'reference', to: {type: 'category'}}],
+      of: [{type: 'reference', to: {type: 'toolCategory'}}],
     }),
     defineField({
       name: 'publishedAt',

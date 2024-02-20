@@ -4,6 +4,7 @@ import post from "./post";
 import author from "./author";
 import project from "./project";
 import tool from "./tool";
+import toolCategory from "./toolCategory";
 export const schemaTypes = [
   post,
   author,
@@ -11,4 +12,5 @@ export const schemaTypes = [
   blockContent,
   project,
   tool,
+  toolCategory
 ];
