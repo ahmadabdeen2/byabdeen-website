@@ -18,6 +18,10 @@ const query = groq`
 
 `
 
+export const metadata = {
+  title: 'Portfolio',
+  description: "A collection of projects that I've worked on.",
+}
 
 
 const Portfolio = async () => {
