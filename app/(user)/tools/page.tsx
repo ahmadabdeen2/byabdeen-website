@@ -8,6 +8,12 @@ import HeadText from "../../../components/HeadText";
 import BlogComponent from "../../../components/BlogComponent";
 import Posts from "../../../components/Posts";
 
+
+export const metadata = {
+  title: 'AI Tools',
+  description: "A collection of AI tools that I've found useful.",
+}
+
 const query = groq`
 *[_type=='tool']{
   ...,
@@ -23,6 +29,8 @@ const categoriesQuery = groq`
 
 
 export const revalidate = 360;
+
+
 
 const Tools = async () => {
   const posts: Post[] = await client.fetch(query);
