@@ -42,7 +42,7 @@ const ProjectComponent = ({ project, flipped, index }: Props) => {
         transition = {{duration: 1}}
         viewport ={{once:true}}
         >
-          {project?.mainImage && (
+          {project.mainImage && (
             <Image
               src={urlFor(project?.mainImage).url()}
               alt={project.title}
