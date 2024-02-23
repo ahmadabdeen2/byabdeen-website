@@ -74,6 +74,11 @@ export default defineType({
         title: 'Note',
         type: 'string',
       }),
+  defineField({
+    name: "order",
+    title: "Order",
+    type: "number",
+  })
   ],
 
   preview: {
