@@ -16,7 +16,7 @@ const query = groq`
     ...,
     author->,
     categories[]->
-  } | order(publishedAt desc)
+  } | order(order asc)
 `;
 
 
