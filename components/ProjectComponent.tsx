@@ -42,12 +42,15 @@ const ProjectComponent = ({ project, flipped, index }: Props) => {
         transition = {{duration: 1}}
         viewport ={{once:true}}
         >
-          <Image
-            src={urlFor(project?.mainImage).url()}
-            alt={project.title}
-            width={2000}
-            height={2000}
-          />
+          {project?.mainImage && (
+            <Image
+              src={urlFor(project?.mainImage).url()}
+              alt={project.title}
+              width={2000}
+              height={2000}
+            />
+          )}
+  
         </motion.div>
         <div className={`flex flex-col h-full xs:max-w-[40%] w-full`}>
           <div className="flex items-start justify-start mt-5 xs:mt-0">
